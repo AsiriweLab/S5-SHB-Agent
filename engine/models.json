@@ -1,0 +1,56 @@
+{
+  "_comment": "POC10 Model Registry -- Edit to add models, change presets, or adjust agent constraints.",
+
+  "registry": {
+    "gemini-2.5-pro":      {"tier": "pro",   "cost_per_1k": 0.00125, "provider": "google",    "privacy": "cloud"},
+    "gemini-2.5-flash":    {"tier": "flash", "cost_per_1k": 0.00015, "provider": "google",    "privacy": "cloud"},
+    "gemini-2.0-flash":    {"tier": "flash", "cost_per_1k": 0.0001,  "provider": "google",    "privacy": "cloud"},
+    "gemini-2.5-flash-lite": {"tier": "flash", "cost_per_1k": 0.00008, "provider": "google",    "privacy": "cloud"},
+    "claude-sonnet-4-6": {"tier": "pro",   "cost_per_1k": 0.003,   "provider": "anthropic", "privacy": "cloud"},
+    "claude-haiku-4-5":  {"tier": "flash", "cost_per_1k": 0.0008,  "provider": "anthropic", "privacy": "cloud"},
+    "gpt-4o":            {"tier": "pro",   "cost_per_1k": 0.005,   "provider": "openai",    "privacy": "cloud"},
+    "gpt-4o-mini":       {"tier": "flash", "cost_per_1k": 0.00015, "provider": "openai",    "privacy": "cloud"},
+    "ollama/llama3":     {"tier": "flash", "cost_per_1k": 0.0,     "provider": "ollama",    "privacy": "local"},
+    "ollama/mistral":    {"tier": "flash", "cost_per_1k": 0.0,     "provider": "ollama",    "privacy": "local"}
+  },
+
+  "agent_constraints": {
+    "safety-agent-001":      {"min_tier": "pro",   "allow_local": true},
+    "health-agent-002":      {"min_tier": "pro",   "allow_local": true},
+    "security-agent-003":    {"min_tier": "flash", "allow_local": true},
+    "privacy-agent-004":     {"min_tier": "flash", "allow_local": true},
+    "energy-agent-005":      {"min_tier": "flash", "allow_local": true},
+    "climate-agent-006":     {"min_tier": "flash", "allow_local": true},
+    "maintenance-agent-007": {"min_tier": "flash", "allow_local": true},
+    "nlu-agent-008":         {"min_tier": "flash", "allow_local": true},
+    "anomaly-agent-009":     {"min_tier": "n/a",   "allow_local": true},
+    "arbitration-agent-010": {"min_tier": "flash", "allow_local": true}
+  },
+
+  "presets": {
+    "balanced": {
+      "description": "Pro models for safety/health, flash for others",
+      "default": "gemini-2.0-flash",
+      "safety": "gemini-2.5-pro",
+      "health": "gemini-2.5-pro"
+    },
+    "max_privacy": {
+      "description": "All local models, no cloud API calls (safety tier constraint relaxed)",
+      "default": "ollama/llama3",
+      "safety": "ollama/llama3",
+      "health": "ollama/llama3"
+    },
+    "budget": {
+      "description": "Cheapest cloud models, pro for safety/health",
+      "default": "gpt-4o-mini",
+      "safety": "gemini-2.5-pro",
+      "health": "gemini-2.5-pro"
+    },
+    "best_quality": {
+      "description": "Pro-tier models everywhere for maximum accuracy",
+      "default": "gemini-2.5-pro",
+      "safety": "gemini-2.5-pro",
+      "health": "gemini-2.5-pro"
+    }
+  }
+}

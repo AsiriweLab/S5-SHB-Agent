@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Siriweera
+    given-names: Akila
+    affiliation: The University of Aizu
+title: "S5-SHB Agent: Society 5.0 enabled Multi-model Agentic Blockchain Framework for Smart Home"
+version: 1.0.0
+date-released: 2026-03-04
+url: "https://github.com/AsiriweLab/S5-SHB-Agent"
+keywords:
+  - smart-home
+  - blockchain
+  - multi-agent
+  - society-5-0
+  - adaptive-proof-of-work
+  - LLM-orchestration
+  - governance
+license: MIT
