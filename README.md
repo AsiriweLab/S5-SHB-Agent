@@ -93,13 +93,14 @@ S5-SHB-Agent/
 If you use S5-SHB Agent in your research, please cite:
 
 ```bibtex
-@article{s5shb2026,
-  title     = {S5-SHB Agent: Society 5.0 enabled Multi-model Agentic Blockchain Framework for Smart Home},
-  author    = {Siriweera, Akila},
-  journal   = {IEEE Access},
-  year      = {2026},
-  note      = {Under review},
-  url       = {https://github.com/AsiriweLab/S5-SHB-Agent}
+@misc{rangila2026s5shbagentsociety50,
+      title={S5-SHB Agent: Society 5.0 enabled Multi-model Agentic Blockchain Framework for Smart Home}, 
+      author={Janani Rangila and Akila Siriweera and Incheon Paik and Keitaro Naruse and Isuru Jayanada and Vishmika Devindi},
+      year={2026},
+      eprint={2603.05027},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2603.05027}, 
 }
 ```
 
