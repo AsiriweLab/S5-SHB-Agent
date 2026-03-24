@@ -1,9 +1,24 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
+  - family-names: Rangila
+    given-names: Janani
+    affiliation: KD University
   - family-names: Siriweera
     given-names: Akila
     affiliation: The University of Aizu
+  - family-names: Paik
+    given-names: Incheon
+    affiliation: The University of Aizu
+  - family-names: Naruse
+    given-names: Keitaro
+    affiliation: The University of Aizu
+  - family-names: Jayanada
+    given-names: Isuru
+    affiliation: KD University
+  - family-names: Devindi
+    given-names: Vishmika
+    affiliation: KD University
 title: "S5-SHB Agent: Society 5.0 enabled Multi-model Agentic Blockchain Framework for Smart Home"
 version: 1.0.0
 date-released: 2026-03-04
