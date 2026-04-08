@@ -6,19 +6,19 @@ S5-SHB Agent is a research framework that integrates adaptive blockchain consens
 
 ## Key Features
 
-- **Adaptive PoW Blockchain** — Four-phase difficulty adaptation (Idle, Normal, Emergency, Recovery) with firmware-level emergency bypass, Ed25519 digital signatures, and Merkle tree anchoring for tamper-evident auditability
-- **Ten-Agent Multi-Model Orchestration** — Ten specialized agents organized into four priority tiers (Safety, Security, Efficiency, Comfort), routed across four LLM provider backends (Gemini, OpenAI, Anthropic, Ollama) with tier-constrained model assignment
-- **Four-Stage Conflict Resolution** — Safety override, contextual LLM arbitration, ML-based historical scoring, and priority-based fallback policy for deterministic inter-agent dispute resolution
-- **Society 5.0 Governance Model** — Four-tier resident-centric governance separating routine preferences, advanced overrides, and immutable safety thresholds via on-chain enforcement with natural-language interfaces
-- **Multi-Mode Deployment** — Simulation, real-hardware, and hybrid deployment modes under a unified orchestration layer with Merkle anchoring for reproducibility
+- **Adaptive PoW Blockchain** - Four-phase difficulty adaptation (Idle, Normal, Emergency, Recovery) with firmware-level emergency bypass, Ed25519 digital signatures, and Merkle tree anchoring for tamper-evident auditability
+- **Ten-Agent Multi-Model Orchestration** - Ten specialized agents organized into four priority tiers (Safety, Security, Efficiency, Comfort), routed across four LLM provider backends (Gemini, OpenAI, Anthropic, Ollama) with tier-constrained model assignment
+- **Four-Stage Conflict Resolution** - Safety override, contextual LLM arbitration, ML-based historical scoring, and priority-based fallback policy for deterministic inter-agent dispute resolution
+- **Society 5.0 Governance Model** - Four-tier resident-centric governance separating routine preferences, advanced overrides, and immutable safety thresholds via on-chain enforcement with natural-language interfaces
+- **Multi-Mode Deployment** - Simulation, real-hardware, and hybrid deployment modes under a unified orchestration layer with Merkle anchoring for reproducibility
 
 ## Architecture
 
 S5-SHB Agent follows a three-layer architecture:
 
-1. **Control Plane** — FastAPI backend with REST/WebSocket APIs, Vue 3 frontend dashboard, and external interface management
-2. **Agent Intelligence** — Ten specialized agents, multi-model LLM router with tier-constrained provider assignment, four-stage conflict resolution cascade, and anomaly detection ensemble
-3. **Device & Data** — IoT device abstraction via Model Context Protocol (MCP), adaptive PoW blockchain with Ed25519/Merkle trust infrastructure, and SQLite off-chain persistence
+1. **Control Plane** - FastAPI backend with REST/WebSocket APIs, Vue 3 frontend dashboard, and external interface management
+2. **Agent Intelligence** - Ten specialized agents, multi-model LLM router with tier-constrained provider assignment, four-stage conflict resolution cascade, and anomaly detection ensemble
+3. **Device & Data** - IoT device abstraction via Model Context Protocol (MCP), adaptive PoW blockchain with Ed25519/Merkle trust infrastructure, and SQLite off-chain persistence
 
 ## Quick Start
 
@@ -62,7 +62,7 @@ The application will be available at `http://localhost:5174` (frontend) and `htt
 S5-SHB-Agent/
 ├── engine/                  # Core Python engine
 │   ├── adapters/            # Device adapters (HTTP, MQTT, Mock)
-│   ├── agent.py             # SmartHomeAgent — 7-role LLM agent
+│   ├── agent.py             # SmartHomeAgent - 7-role LLM agent
 │   ├── anomaly_agent.py     # Anomaly detection (4-model ensemble)
 │   ├── arbitration_agent.py # Four-stage conflict resolution
 │   ├── blockchain.py        # Adaptive PoW blockchain
