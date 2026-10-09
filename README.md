@@ -26,7 +26,13 @@ S5-SHB Agent follows a three-layer architecture:
 
 - Python 3.11+
 - Node.js 18+
+- [S5-HES-Agent](https://github.com/AsiriweLab/S5-HES-Agent), the companion simulation engine, running at `http://localhost:8000` (required for simulation mode)
+- An MQTT broker such as Mosquitto (real-device mode only)
 - At least one LLM API key (Gemini, OpenAI, or Anthropic)
+
+### Start S5-HES-Agent first
+
+S5-SHB-Agent takes its simulated device telemetry from S5-HES-Agent, so install and start S5-HES-Agent first by following [its README](https://github.com/AsiriweLab/S5-HES-Agent). By default S5-SHB-Agent expects it at `http://localhost:8000`; if it runs elsewhere, set the environment variable `S5_HES_AGENT_URL` before starting the backend.
 
 ### Backend Setup
 
